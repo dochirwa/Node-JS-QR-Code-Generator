@@ -1,10 +1,10 @@
-version: '3.3'
+version: '2.4'
 services:
-  generator:  
+  apache:  
     image: 'dchirwa/node-js-qr-code-generator:latest'
     environment: 
       - "PORT:3000" 
     ports:
       - "80:80"
     volumes:
-      - ./:/app
+      - .:/usr/local/apache2/htdocs
