@@ -1,6 +1,6 @@
 version: '3.3'
 services:
-  snake:  
+  generator:  
     image: 'dchirwa/node-js-qr-code-generator:latest'
     environment: 
       - "PORT:3000" 
